@@ -146,3 +146,59 @@ prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
 })
+
+// Responsive handling
+function handleResize() {
+    const width = window.innerWidth;
+    const monster = document.getElementById('monster');
+    const orangeCut = document.getElementById('orange-cut');
+    const watermelon = document.getElementById('watermelon');
+
+    if (width <= 768) {
+        monster.style.top = '20%';
+        orangeCut.style.top = '40%';
+        watermelon.style.top = '60%';
+    } else {
+        monster.style.top = '10%';
+        orangeCut.style.top = '10%';
+        watermelon.style.top = '55%';
+    }
+
+    // Adjust slider for mobile
+    const container = document.querySelector('.container');
+    if (width <= 576) {
+        container.style.width = '90vw';
+        container.style.height = '400px';
+    } else {
+        container.style.width = '1000px';
+        container.style.height = '600px';
+    }
+}
+
+// Call handleResize on load and resize
+window.addEventListener('load', handleResize);
+window.addEventListener('resize', handleResize);
+
+// Mobile menu toggle
+const menuToggle = document.createElement('button');
+menuToggle.innerText = 'Menu';
+menuToggle.style.display = 'none';
+document.querySelector('nav').prepend(menuToggle);
+
+menuToggle.addEventListener('click', () => {
+    const cntrNav = document.querySelector('.cntr-nav');
+    cntrNav.style.display = cntrNav.style.display === 'none' ? 'flex' : 'none';
+});
+
+function toggleMobileMenu() {
+    if (window.innerWidth <= 576) {
+        menuToggle.style.display = 'block';
+        document.querySelector('.cntr-nav').style.display = 'none';
+    } else {
+        menuToggle.style.display = 'none';
+        document.querySelector('.cntr-nav').style.display = 'flex';
+    }
+}
+
+window.addEventListener('load', toggleMobileMenu);
+window.addEventListener('resize', toggleMobileMenu);
