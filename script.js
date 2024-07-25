@@ -24,7 +24,7 @@ function startAnimation(element) {
         }
 
         iteration += 1 / 5; // Slower transition
-    }, 50); // Increase interval duration
+    }, 20); // Increase interval duration
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -35,38 +35,84 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var tl = gsap.timeline({scrollTrigger:{
     trigger: ".two",
-    start: "0% 95%",
+    start: " 101%",
     end: "70% 50%",
     scrub: true,
     // markers: true,
 }})
 
-tl.to("#fanta",{
+tl.to("#monster",{
     top: "120%",
     left: "11%"
-}, 'orange')
+}, 'watermelon')
 tl.to("#orange-cut",{
     top:"160%",
     left: "23%",
     rotate:"360deg"
-}, 'orange')
-tl.to("#orange",{
-    width: "15%",
-    top:"160%",
+}, 'watermelon')
+tl.to("#watermelon",{
+    width: "14%",
+    top:"172%",
     right: "10%",
     rotate:"360deg"
-}, 'orange')
+}, 'watermelon')
 tl.to("#leaf",{
-    top:"110%",
+    top:"100%",
     rotate: "130deg",
     left: "70%"
-}, 'orange')
+}, 'watermelon')
 tl.to("#leaf2",{
     top:"110%",
     rotate: "130deg",
     left: "0%"
-}, 'orange')
+}, 'watermelon')
 
+gsap.from(".lemon1",{scrollTrigger:{
+    trigger: ".three",
+    start: "0% 95%",
+    end: "20% 30%",
+    scrub: true,
+    // markers: true,
+},
+    rotate: "-90deg",
+    left: "-100%",
+    top: "110%"
+})
+gsap.from(".lemon2",{scrollTrigger:{
+    trigger: ".three",
+    start: "0% 95%",
+    end: "20% 30%",
+    scrub: true,
+    // markers: true,
+},
+    rotate: "90deg",
+    left: "120%",
+    top: "110%"
+})
+
+gsap.from("#blue",{scrollTrigger:{
+    trigger: ".three",
+    start: "0% 95%",
+    end: "20% 30%",
+    scrub: true,
+    // markers: true,
+},
+    rotate: "-90deg",
+    top: "110%",
+    left: "-100%",
+})
+
+gsap.from("#red",{scrollTrigger:{
+    trigger: ".three",
+    start: "0% 95%",
+    end: "20% 30%",
+    scrub: true,
+    // markers: true,
+}, 
+    rotate: "90deg",
+    top: "110%",
+    left: "100%",
+})
 
 var tl2 = gsap.timeline({scrollTrigger:{
     trigger: ".three",
@@ -76,35 +122,13 @@ var tl2 = gsap.timeline({scrollTrigger:{
     // markers: true,
 }})
 
-tl2.from(".lemon1",{
-    rotate: "-90deg",
-    left: "-100%",
-    top: "110%"
-}, 'ca')
-tl2.from("#cocacola",{
-    rotate: "-90deg",
-    top: "110%",
-    left: "-100%",
-}, 'ca')
-
-tl2.from(".lemon2",{
-    rotate: "90deg",
-    left: "120%",
-    top: "110%"
-}, 'ca')
-tl2.from("#pepsi",{
-    rotate: "90deg",
-    top: "110%",
-    left: "100%",
-}, 'ca')
-
 tl2.to("#orange-cut",{
     width:"18%",
     left: "42%",
     top: "195%",
     rotate:"360"
 }, 'ca')
-tl2.to("#fanta",{
+tl2.to("#monster",{
     height:"350px",
     top: "210%",
     left: "44%",

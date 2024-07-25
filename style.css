@@ -135,12 +135,12 @@ nav i{
 
 .one #M{
     position: absolute;
-    height:  23vw;
-    left: 0%;
-    margin-top: 50px;
+    height: 23vw;
+    left: 6%;
+    margin-top: 20px;
 }
 
-#fanta{
+#monster{
     position: absolute;
     top: 10%;
     height: 500px;
@@ -159,7 +159,7 @@ nav i{
 
 }
 
-#orange{
+#watermelon{
     position: absolute;
     width: 20%;
     z-index: 3;
@@ -291,7 +291,7 @@ nav i{
     box-shadow: 0 0 15px #4af626;
 }
 
-#cocacola{
+#blue{
     top: -15%;
     position: absolute;
     height: 350px;
@@ -301,7 +301,7 @@ nav i{
 
 }
 
-#pepsi{
+#red{
     top: -15%;
     position: absolute;
     height: 350px;
@@ -573,4 +573,521 @@ li:hover {
 @keyframes float {
     0%, 100% { transform: rotate(-15deg) translateY(0); }
     50% { transform: rotate(-15deg) translateY(-20px); }
+}
+
+/* Base styles remain the same */
+
+/* Mobile First Approach */
+@media screen and (max-width: 575px) {
+    nav {
+        padding: 0 5vw;
+        height: 8vh;
+    }
+
+    nav a, nav i {
+        font-size: 4vw;
+    }
+
+    .cntr-nav {
+        gap: 6vw;
+    }
+
+    .one h1 {
+        font-size: 14vw;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .one #phi {
+        font-size: 16vw;
+    }
+
+    .one #M {
+        height: 18vw;
+    }
+
+    #fanta, #orange-cut, #orange, #leaf, #leaf2, #leaf3 {
+        width: 50%;
+        top: 20%;
+    }
+
+    .two {
+        flex-direction: column;
+    }
+
+    .lft-two, .rght-two {
+        width: 100%;
+        padding: 5vh 5vw;
+    }
+
+    .rght-two h1 {
+        font-size: 8vw;
+        width: 100%;
+    }
+
+    .rght-two p {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .three {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .card {
+        width: 80vw;
+        height: 50vh;
+        margin-top: 5vh;
+    }
+
+    .card h1 {
+        font-size: 8vw;
+        margin-top: 25vh;
+    }
+
+    .card button {
+        font-size: 4vw;
+        padding: 2vw 4vw;
+    }
+
+    .container {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .footer-section {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    nav {
+        padding: 0 7vw;
+    }
+
+    nav a, nav i {
+        font-size: 2.5vw;
+    }
+
+    .one h1 {
+        font-size: 16vw;
+        margin-left: 50px;
+    }
+
+    .one #phi {
+        font-size: 18vw;
+    }
+
+    .one #M {
+        height: 20vw;
+    }
+
+    #fanta, #orange-cut, #orange, #leaf, #leaf2, #leaf3 {
+        width: 40%;
+    }
+
+    .two {
+        flex-direction: column;
+    }
+
+    .lft-two, .rght-two {
+        width: 100%;
+        padding: 5vh 10vw;
+    }
+
+    .rght-two h1 {
+        font-size: 7vw;
+        width: 100%;
+    }
+
+    .rght-two p {
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .three {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45vw;
+        height: 55vh;
+        margin-top: 5vh;
+    }
+
+    .card h1 {
+        font-size: 5vw;
+    }
+
+    .container {
+        width: 90vw;
+        height: 75vh;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .one h1 {
+        font-size: 14vw;
+        margin-left: 80px;
+    }
+
+    .one #phi {
+        font-size: 16vw;
+    }
+
+    #fanta, #orange-cut, #orange, #leaf, #leaf2, #leaf3 {
+        width: 35%;
+    }
+
+    .rght-two h1 {
+        font-size: 5vw;
+    }
+
+    .rght-two p {
+        font-size: 1.8vw;
+    }
+
+    .card {
+        width: 30vw;
+    }
+
+    .card h1 {
+        font-size: 3.5vw;
+    }
+
+    .container {
+        width: 85vw;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .one h1 {
+        font-size: 12vw;
+    }
+
+    .one #phi {
+        font-size: 14vw;
+    }
+
+    .rght-two h1 {
+        font-size: 4vw;
+    }
+
+    .rght-two p {
+        font-size: 1.5vw;
+    }
+
+    .card {
+        width: 28vw;
+    }
+
+    .card h1 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Existing styles work well, but we can fine-tune if needed */
+    .one h1 {
+        font-size: 10vw;
+    }
+
+    .one #phi {
+        font-size: 12vw;
+    }
+
+    .rght-two h1 {
+        font-size: 3.5vw;
+    }
+
+    .card {
+        width: 25vw;
+    }
+}
+
+@media screen and (min-height: 721px) {
+    .one, .two, .three {
+        height: 95vh;
+    }
+
+    .card {
+        height: 70vh;
+    }
+
+    #fanta, #orange-cut, #orange, #leaf, #leaf2, #leaf3 {
+        top: 15%;
+    }
+}
+
+/* Additional responsive adjustments */
+@media screen and (max-height: 600px) {
+    .one, .two, .three {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .card {
+        height: 80vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .one h1 {
+        font-size: 10vw;
+        margin-top: 20px;
+    }
+
+    .card {
+        height: 90vh;
+    }
+
+    .container {
+        height: 90vh;
+    }
+}
+
+/* Base styles remain the same */
+
+/* Small Desktop: 992px - 1199px */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    nav {
+        padding: 0 8vw;
+    }
+
+    nav a, nav i {
+        font-size: 1vw;
+    }
+
+    .one h1 {
+        font-size: 16vw;
+        margin-left: 120px;
+    }
+
+    .one #phi {
+        font-size: 18vw;
+    }
+
+    .one #M {
+        height: 21vw;
+    }
+
+    #fanta {
+        height: 450px;
+    }
+
+    #orange-cut {
+        width: 18%;
+    }
+
+    #orange {
+        width: 22%;
+    }
+
+    #leaf, #leaf2 {
+        width: 16%;
+    }
+
+    .rght-two h1 {
+        font-size: 4.5vw;
+        width: 450px;
+    }
+
+    .rght-two p {
+        font-size: 1.2vw;
+    }
+
+    .card {
+        width: 27vw;
+        height: 65vh;
+    }
+
+    .card h1 {
+        font-size: 3.5vw;
+    }
+
+    .card button {
+        font-size: 1.2vw;
+    }
+
+    .container {
+        width: 900px;
+        height: 550px;
+    }
+}
+
+/* Medium Desktop: 1200px - 1439px */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+    nav {
+        padding: 0 10vw;
+    }
+
+    .one h1 {
+        font-size: 15vw;
+        margin-left: 140px;
+    }
+
+    .one #phi {
+        font-size: 17vw;
+    }
+
+    .one #M {
+        height: 22vw;
+    }
+
+    #fanta {
+        height: 480px;
+    }
+
+    #orange-cut {
+        width: 16%;
+    }
+
+    #orange {
+        width: 21%;
+    }
+
+    .rght-two h1 {
+        font-size: 4vw;
+        width: 480px;
+    }
+
+    .rght-two p {
+        font-size: 1.1vw;
+    }
+
+    .card {
+        width: 26vw;
+        height: 68vh;
+    }
+
+    .card h1 {
+        font-size: 3.2vw;
+    }
+
+    .container {
+        width: 950px;
+        height: 570px;
+    }
+}
+
+/* Large Desktop: 1440px and above */
+@media screen and (min-width: 1440px) {
+    nav {
+        padding: 0 12vw;
+    }
+
+    nav a, nav i {
+        font-size: 0.9vw;
+    }
+
+    .one h1 {
+        font-size: 14vw;
+        margin-left: 160px;
+    }
+
+    .one #phi {
+        font-size: 16vw;
+    }
+
+    .one #M {
+        height: 23vw;
+    }
+
+    #fanta {
+        height: 520px;
+    }
+
+    #orange-cut {
+        width: 15%;
+    }
+
+    #orange {
+        width: 20%;
+    }
+
+    #leaf, #leaf2 {
+        width: 14%;
+    }
+
+    .rght-two h1 {
+        font-size: 3.5vw;
+        width: 500px;
+    }
+
+    .rght-two p {
+        font-size: 1vw;
+    }
+
+    .card {
+        width: 25vw;
+        height: 70vh;
+    }
+
+    .card h1 {
+        font-size: 3vw;
+    }
+
+    .card button {
+        font-size: 1vw;
+    }
+
+    .container {
+        width: 1000px;
+        height: 600px;
+    }
+}
+
+/* Additional adjustments for very large screens */
+@media screen and (min-width: 1800px) {
+    .one h1 {
+        font-size: 12vw;
+    }
+
+    .one #phi {
+        font-size: 14vw;
+    }
+
+    #fanta {
+        height: 550px;
+    }
+
+    .rght-two h1 {
+        font-size: 3vw;
+    }
+
+    .card {
+        width: 23vw;
+    }
+
+    .container {
+        width: 1200px;
+        height: 700px;
+    }
 }
